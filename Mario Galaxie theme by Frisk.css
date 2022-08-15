@@ -1,0 +1,73 @@
+
+:root {
+    --bounce-height: 20px;
+}
+
+.full-motion .listItem-3SmSlK.bd-guild.bd-badge .pill-2RsI5Q.bd-unread:not(.bd-selected) + div:not([class])  {
+    animation-name: unreadguildbounce; 
+    animation-delay: 1s; /* delay before begin bouncing */
+    animation-duration: 1.5s; /* duration of each bounce */
+    animation-iteration-count: 5; /* number of bounces */
+}
+
+@keyframes unreadguildbounce {
+   0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+   40% {transform: translateY(calc(var(--bounce-height) * -1));} 
+   60% {transform: translateY(calc(var(--bounce-height) * -.5));} 
+}
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/HideAndPeekGuilds.css);
+
+:root {
+    /* from 0.0 to 1.0 */
+    --guildlist-show: 0;
+    /* How much of the guild list appears unhovered */
+    --guildlist-peek-unread: 1;
+    --guildlist-peek-ping: 1;
+    --guildlist-peek-selected: 1;
+    --guildlist-peek-group-unread: 1;
+}
+@import url(https://dablulite.github.io/macos-titlebar-buttons/import.css);
+:root {
+    --mactitlebar-left-margin: 5px;
+    --mactitlebar-top-margin: 10px;
+    --mactitlebar-button-width: 20px;
+    --mactitlebar-button-height: 20px;
+    --mactitlebar-button-border-radius: 50px;
+    --mactitlebar-close-btn-back: #f25056;
+    --mactitlebar-min-btn-back: #fac536;
+    --mactitlebar-max-btn-back: #39ea49;
+    --macbuttons-serverlist-inner-top-margin: 32px;
+    /*guilds inner ul element*/
+    --macbuttons-serverlist-outer-top-margin: 0;
+    --macbuttons-serverlist-outer-height: 100%;
+}
+@import url("https://codedotspectra.github.io/themes/themes-cores/neutron8.css");
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+:root {
+--themeColor1: #DC0000FF;
+--themeColor2: #E5E102FF;
+--customFont: 'Mario Party Hudson';
+--homeImage: url('https://i.imgur.com/HEJlRPp.gif');
+--homeImageSize: cover;
+--backgroundColor: #00050DFF;
+--backgroundImage: url('https://i.imgur.com/l3cfnpF.jpg');
+--backgroundPosition: center;
+--backgroundSize: cover;
+--backgroundRepeat: no-repeat;
+--backgroundBlur: 6px;
+--backgroundOpacity: 0.65;
+--rs-small-spacing: 2px;
+--rs-medium-spacing: 3px;
+--rs-large-spacing: 4px;
+--rs-small-width: 2px;
+--rs-medium-width: 3px;
+--rs-large-width: 4px;
+--rs-avatar-shape: 50%;
+--rs-online-color: #43b581;
+--rs-idle-color: #faa61a;
+--rs-dnd-color: #f04747;
+--rs-offline-color: #636b75;
+--rs-streaming-color: #643da7;
+--rs-invisible-color: #747f8d;
+--rs-phone-visible: block;
+}
